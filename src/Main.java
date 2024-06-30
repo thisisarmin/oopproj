@@ -1,18 +1,29 @@
-//this is armin khosravani (402101617)
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static Scanner scanner = new Scanner(System.in);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-            //aaaaaaarmin
+    public static void main(String[] args) throws FileNotFoundException {
+            Server.readDataFromServer();
 
-        }
+//        File file = new File("graph.txt");
+//        Scanner raeder = new Scanner(file);
+//        String[] firstline = raeder.nextLine().split(" ");
+//        int node = Integer.parseInt(firstline[0]);
+//        Graph graph = new Graph(node);
+//        int mline = Integer.parseInt(firstline[1]);
+//        for (int i = 0; i < mline; i++) {
+//            String[] lines = raeder.nextLine().split(" ");
+//            int source = Integer.parseInt(lines[0]);
+//            int dest = Integer.parseInt(lines[1]);
+//            int weight = Integer.parseInt(lines[2]);
+//            graph.addEdge(source - 1, dest - 1, weight);
+//       }
+            launch(args);
+            ProgramController.Run();
     }
+
+
 }
