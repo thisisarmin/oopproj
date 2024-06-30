@@ -7,4 +7,5 @@ public class SignUpMenu {
         Pattern pattern = Pattern.compile(regex);
         return pattern.matcher(input);
     }
+
 }
